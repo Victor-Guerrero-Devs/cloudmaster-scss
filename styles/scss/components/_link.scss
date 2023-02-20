@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: $accent-clr;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.link-arrow::after {
+  content: '-->';
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: $desktop-width) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}

@@ -5,3 +5,6 @@
 // import abstract modules
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
+
+//import component modules
+@use 'components/link';
