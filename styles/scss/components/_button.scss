@@ -1,0 +1,62 @@
+@use '../abstracts/' as *;
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: $clr-primary;
+    color: $clr-white;
+
+    &:hover {
+      background-color: lighten($clr-primary, 10%);
+    }
+  }
+
+  &--secondary {
+    background-color: $clr-secondary;
+    color: $clr-white;
+
+    &:hover {
+      background-color: lighten($clr-secondary, 10%);
+    }
+  }
+
+  &--accent {
+    background-color: $clr-accent;
+    color: $clr-white;
+
+    &:hover {
+      background-color: lighten($clr-accent, 10%);
+    }
+  }
+
+  &--outline {
+    background-color: $clr-white;
+    color: $clr-headings;
+    border: 2px solid $clr-headings;
+
+    &:hover {
+      background-color: $clr-headings;
+      color: $clr-white;
+    }
+  }
+
+  &--block {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
