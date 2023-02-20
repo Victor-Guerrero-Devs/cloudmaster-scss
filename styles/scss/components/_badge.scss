@@ -1,0 +1,33 @@
+@use '../abstracts/' as *;
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 3rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background-color: $clr-primary;
+  color: $clr-white;
+}
+
+.badge--secondary {
+  background-color: $clr-secondary;
+  color: $clr-white;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: $desktop-width) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
