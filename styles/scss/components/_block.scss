@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.block {
+  --padding-vertical: 5rem;
+  padding: var(--padding-vertical) 2rem;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__heading {
+    margin-top: 0;
+  }
+
+  &--dark {
+    background: #000;
+    color: #7b858b;
+  }
+
+  &--dark h1,
+  &--dark h2,
+  &--dark h3 {
+    color: $clr-white;
+  }
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}

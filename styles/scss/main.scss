@@ -21,6 +21,8 @@
 @use 'components/testimonial';
 @use 'components/callout';
 @use 'components/collapsible';
+@use 'components/block';
 
 // import layout modules
 @use 'layouts/grid';
+@use 'layouts/container';
