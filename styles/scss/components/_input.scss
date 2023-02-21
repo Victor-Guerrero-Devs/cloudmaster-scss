@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+.input {
+  border-radius: $border-radius;
+  border: 1px solid $clr-borders;
+  color: $clr-headings;
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  // pseudo-element selector
+  color: #cdcbd7; //  changes placeholder text color
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}

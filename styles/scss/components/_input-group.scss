@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.input-group {
+  border: 1px solid $clr-borders;
+  border-radius: $border-radius;
+  display: flex;
+
+  & .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+  }
+
+  & .btn {
+    margin: 4px;
+  }
+}
