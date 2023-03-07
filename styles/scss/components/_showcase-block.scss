@@ -1,0 +1,29 @@
+.block-showcase__text {
+  color: #909ca3;
+}
+
+.container.flex picture > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1080px) {
+  .container.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .block-showcase__image {
+    width: 50%;
+  }
+
+  .block-showcase__image > img {
+    width: 100%;
+  }
+
+  .container.flex .list {
+    width: 50%;
+  }
+}
