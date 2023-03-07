@@ -9,7 +9,15 @@
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
+  outline: 0;
   white-space: nowrap;
+
+  & .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
 
   &--primary {
     background-color: $clr-primary;
